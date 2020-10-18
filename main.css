@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html{
+    width: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+    background-color: #fafafa;
+}
+
+header #logo {
+    color: #cba25a;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a{color:#7a7879}
+
+#about > a:hover{
+    color:#cba25a
+}
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+ header.fixed #logo{
+     color: #cba25a;
+ }
+
+.fixed #about a {
+    color: #7a7879;
+}
+
+.fixed #about a:hover {
+    color: #cba25a;
+}
+
+#main{
+    width: 100%;
+    /* height: auto; */
+    background-image: url('C:/Users/Ebony_Maw/Desktop/Сайтинна/www/image/daria_nesenova.jpg');
+    background-blend-mode: multiply;
+    background-color: #7a7879;
+    background-size: cover;
+    text-align: center;
+    color: #cba25a;
+    font-size: 26px;
+}
+
+#main h1{
+    padding-top: 10%;
+    font-size: 2.5em;
+    color: #e9e9e9;
+}
+
+#main p{  
+    padding:30px 0px 50px;    
+    color: #e9e9e9;
+    font-size: 25px;
+}
+
+.img {
+    margin: 50px 10px 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+#aboutus {
+    text-align: center;
+    font-size: 1.3em;
+    background-image: url(../image/dPxQRGdEyWE.jpg);
+    background-blend-mode: multiply;
+    background-color: #636363;
+    background-size: auto;
+    background-attachment: fixed;
+    color: #fafafa;
+    padding: 100px 15%;
+    width: 70%;
+}
+
+#inus{
+    display: flex;
+    padding: 50px 0px;
+    text-align: justify ;
+}
+
+#inus img{
+    border-radius: 25px;
+    margin-right: 25px;
+}
+
+
+#services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.img{grid-area: a;}
+.mc h3{
+    grid-area: b; 
+    align-self: center;
+}
+.mc p{
+    grid-area: c;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+
+.mc {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "a b b"
+                         "a c c";
+    grid-gap: 25px;
+    padding: 80px 0px;
+}
+
+.mc:nth-child(odd){
+    grid-template-areas: "b b a"
+                         "c c a";
+}
+
+.img img{
+    width: 400px;
+    border-radius: 25px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding-top: 20px;
+}
